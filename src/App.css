@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+html, 
+*, 
+*::before, 
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Ubuntu', sans-serif;
+  overflow-x: hidden;
+}
+
+.App {
+  min-height: 100vh;
+}
+
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.btn {
+  border: none;
+  background: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn.active {
+  transform: translateY(-5px);
+  transition: 0.35s ease-in-out;
+  
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.btn-show {
+  background-color: black;
+  border-radius: 6px;
+  color: white;
+  padding: 5px 10px;
+  margin:  10px 0 0;
+  height: 70%;
+}
+
+.disabled {
+  opacity: 0.7;
+}
+
+.users {
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 20px;
+}
+
+.user {
+  /* flex: 1 1 20%; */
+  width: 23.6%;
+  margin-bottom: 30px;
+  border: 1px gray solid;
+  border-radius: 6px;
+}
+
+.userData {
+  display: flex;
+  column-gap: 5px; 
+  margin-bottom: 5px;
+}
+
+.detailsField {
+  margin-bottom: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 70%;
+}
+
+.label {
+  display: grid;
+  width: 90%;
+}
+
+.input {
+  padding: 10px 5px;
+}
+
